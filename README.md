@@ -21,9 +21,10 @@ Com uma interface simples e responsiva, você joga contra o **computador**, que 
 
 ## 📸 Demonstração
 
-| Tela Inicial                           | Gameplay                              |
-| -------------------------------------- | ------------------------------------- |
-| ![Tela Inicial](./assets/preview.png)  | ![Gameplay](./assets/gameplay.gif)    |
+| Tela Inicial                           | 
+| -------------------------------------- | 
+| ![Tela Inicial](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7fa9217-54cb-4909-add6-5c3c14dba733" />
+) |
 
 *(adicione capturas de tela/gifs na pasta `assets` do projeto)*
 

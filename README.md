@@ -68,8 +68,8 @@ xdg-open index.html # Linux
 
 ## 🌐 Versão Online
 
-[![Jogar Agora](https://img.shields.io/badge/Play-Online-brightgreen?style=for-the-badge)](https://seu-usuario.github.io/jokenpo/)
-**Jogue agora:** [Jokenpô no Navegador](https://seu-usuario.github.io/jokenpo/)
+[![Jogar Agora](https://img.shields.io/badge/Play-Online-brightgreen?style=for-the-badge)]([https://seu-usuario.github.io/jokenpo/](https://filipemaciel9000.github.io/jokenpo/))
+**Jogue agora:** [Jokenpô no Navegador]([https://seu-usuario.github.io/jokenpo/](https://filipemaciel9000.github.io/jokenpo/))
 
 ---
 

@@ -23,10 +23,8 @@ Com uma interface simples e responsiva, você joga contra o **computador**, que 
 
 | Tela Inicial                           | 
 | -------------------------------------- | 
-| ![Tela Inicial](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d7fa9217-54cb-4909-add6-5c3c14dba733" />
+| (<img width="1902" height="840" alt="image" src="https://github.com/user-attachments/assets/f8bf3cdf-cc27-4611-a3ab-f118439c7824"/>
 ) |
-
-*(adicione capturas de tela/gifs na pasta `assets` do projeto)*
 
 ---
 
@@ -69,8 +67,8 @@ xdg-open index.html # Linux
 
 ## 🌐 Versão Online
 
-[![Jogar Agora](https://img.shields.io/badge/Play-Online-brightgreen?style=for-the-badge)]([https://seu-usuario.github.io/jokenpo/](https://filipemaciel9000.github.io/jokenpo/))
-**Jogue agora:** [Jokenpô no Navegador]([https://seu-usuario.github.io/jokenpo/](https://filipemaciel9000.github.io/jokenpo/))
+[![Jogar Agora](https://img.shields.io/badge/Play-Online-brightgreen?style=for-the-badge)](https://filipemaciel9000.github.io/jokenpo/)
+**Jogue agora:** [Jokenpô no Navegador](https://filipemaciel9000.github.io/jokenpo/)
 
 ---
 

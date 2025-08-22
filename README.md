@@ -89,8 +89,3 @@ Se deseja sugerir melhorias ou reportar bugs:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 Este projeto está sob a licença MIT — veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
-
-```
-
-👉 Quer que eu já monte os **arquivos `assets/preview.png` e `assets/gameplay.gif`** (prints/gif da tela e do jogo rodando) para deixar o README ainda mais apresentável?
-```

@@ -23,8 +23,7 @@ Com uma interface simples e responsiva, você joga contra o **computador**, que 
 
 | Tela Inicial                           | 
 | -------------------------------------- | 
-| (<img width="1902" height="840" alt="image" src="https://github.com/user-attachments/assets/f8bf3cdf-cc27-4611-a3ab-f118439c7824"/>
-) |
+| <img width="1902" height="840" alt="image" src="https://github.com/user-attachments/assets/f8bf3cdf-cc27-4611-a3ab-f118439c7824"/> |
 
 ---
 
@@ -52,7 +51,7 @@ Com uma interface simples e responsiva, você joga contra o **computador**, que 
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/jokenpo.git
+git clone https://github.com/FilipeMaciel9000/jokenpo.git
 
 # 2. Acesse a pasta
 cd jokenpo

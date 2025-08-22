@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.choices {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* A cor de destaque é Azul */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.game-intro {
+  text-align: center;
+  margin: 20px 0;
+  color: #0056b3;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#computer-choice {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#result {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.choice-display {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/*Responsividade*/
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .choices {
+    flex-direction: column;
+  }
+}

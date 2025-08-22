@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Filipe Maciel" />
+    <meta name="description" content="Jogue Jokenpô no navegador" />
+    <meta
+      name="keywords"
+      content="pedra, papel, tesoura, jokenpo, jogo, educativo, diversão, navegador"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✌️&lt;/text&gt;&lt;/svg&gt;"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      div.choices {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      button {
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff; /* A cor de destaque é Azul */
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 24px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .game-intro {
+        text-align: center;
+        margin: 20px 0;
+        color: #0056b3;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      #computer-choice {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+
+      #result {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .choice-display {
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      /*Responsividade*/
+      @media (max-width: 600px) {
+        button {
+          width: 100%;
+          margin: 10px 0;
+        }
+
+        .choices {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <title>Pedra Papel Tesoura</title>
+  </head>
+  <body>
+    <h1>Jokenpô</h1>
+    <h2 class="game-intro">Jogue contra o computador:</h2>
+
+    <section class="container">
+      <h2>
+        Escolha sua jogada:
+        <span id="player-choice" class="choice-display">Faça sua escolha</span>
+      </h2>
+      <h2>
+        Computador escolheu:
+        <span id="computer-choice" class="choice-display">_</span>
+      </h2>
+      <h2>Resultado: <span id="result" class="choice-display">_</span></h2>
+      <br />
+
+      <div class="choices">
+        <button id="pedra"><i class="fas fa-hand-rock"></i></button>
+        <button id="papel"><i class="fas fa-hand-paper"></i></button>
+        <button id="tesoura"><i class="fas fa-hand-scissors"></i></button>
+      </div>
+    </section>
+    <script>
+      // Declarando variáveis com metodos de seleção
+      const computerChoiceDisplay = document.getElementById('computer-choice');
+      const userChoiceDisplay = document.getElementById('player-choice');
+      const resultDisplay = document.getElementById('result');
+      const possibleChoices = document.querySelectorAll('button');
+      let userChoice;
+      let computerChoice;
+      let result;
+
+      // Adicionando eventos de clique aos botões
+      possibleChoices.forEach((possibleChoice) =>
+        possibleChoice.addEventListener('click', (e) => {
+          // Garantir que pegamos o ID do botão, não do ícone
+          userChoice = e.currentTarget.id;
+          userChoiceDisplay.innerHTML = userChoice;
+          generateComputerChoice();
+          getResult();
+        })
+      );
+
+      // Função para gerar a escolha do computador
+      function generateComputerChoice() {
+        const choices = ['pedra', 'papel', 'tesoura'];
+        const randomNumber = Math.floor(Math.random() * choices.length);
+        computerChoice = choices[randomNumber];
+        computerChoiceDisplay.innerHTML = computerChoice;
+      }
+
+      // Função para obter o resultado
+      function getResult() {
+        if (computerChoice === userChoice) {
+          result = 'Empate!';
+        } else if (
+          (computerChoice === 'pedra' && userChoice === 'tesoura') ||
+          (computerChoice === 'papel' && userChoice === 'pedra') ||
+          (computerChoice === 'tesoura' && userChoice === 'papel')
+        ) {
+          result = 'Você perdeu!';
+        } else {
+          result = 'Você ganhou!';
+        }
+        resultDisplay.innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

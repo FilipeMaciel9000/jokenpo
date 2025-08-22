@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Filipe Maciel" />
+    <meta name="description" content="Jogue Jokenpô no navegador" />
+    <meta
+      name="keywords"
+      content="pedra, papel, tesoura, jokenpo, jogo, educativo, diversão, navegador"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✌️&lt;/text&gt;&lt;/svg&gt;"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pedra Papel Tesoura</title>
+  </head>
+  <body>
+    <h1>Jokenpô</h1>
+    <h2 class="game-intro">Jogue contra o computador:</h2>
+
+    <section class="container">
+      <h2>
+        Escolha sua jogada:
+        <span id="player-choice" class="choice-display">Faça sua escolha</span>
+      </h2>
+      <h2>
+        Computador escolheu:
+        <span id="computer-choice" class="choice-display">_</span>
+      </h2>
+      <h2>Resultado: <span id="result" class="choice-display">_</span></h2>
+      <br />
+
+      <div class="choices">
+        <button id="pedra"><i class="fas fa-hand-rock"></i></button>
+        <button id="papel"><i class="fas fa-hand-paper"></i></button>
+        <button id="tesoura"><i class="fas fa-hand-scissors"></i></button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
